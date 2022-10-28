@@ -218,7 +218,6 @@ function wpmstartMatch() {
       errorWord = arr[i];
     }
   }
- 
 
   j++;
 
@@ -232,10 +231,8 @@ function wpmCheckStatus() {
     getRed();
   } else if (wpmTime === 60 && wpmPlaying === "false") {
     let test = count / 5;
-    wpmScore.innerHTML = `${test} WPS`;
   } else if (wpmTime === 60 && wpmPlaying === "true") {
     let test = count / 5;
-    wpmScore.innerHTML = `${test} WPS`;
   }
 }
 
