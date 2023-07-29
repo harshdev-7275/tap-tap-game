@@ -60,6 +60,7 @@ a:visited {
 /* Navbar */
 .nav-bar{
  background-color: rgba(0, 0, 0, 0.4);
+ height: 110px;
  display: flex;
  align-items: center;
  justify-content: start;
@@ -68,7 +69,6 @@ a:visited {
 }
 .logo{
     cursor: pointer;
-    height: 110px;
     width: 110px;
     padding: 5px 10px;
 }
@@ -96,7 +96,7 @@ a:visited {
 
 .menu{
     background-color: rgba(0, 0, 0, 0.1);
-    height: 610px;
+    height: calc(100vh - 110px);
 }
 .menu-container{
     width: 100%;
@@ -122,12 +122,7 @@ a:visited {
     transform: translateX(-400%);
     
 }
-.box2{
-    transform: translateY(450%);
-}
-.box3{
-    transform: translateX(600%);
-}
+
  .menu-box:hover h1{
    animation: bounce 1s ease infinite;
 }
@@ -159,7 +154,7 @@ a:visited {
 }
 .speed-typing{
     
-    height: 84.5vh;
+    height: calc(100vh - 110px);
     
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -179,10 +174,6 @@ a:visited {
     display: flex;
     align-items: flex-end;
     margin-left: 80px;
-    
-  
-
-   
 }
 .speed-typing-heading h1{
     font-size: 4rem;
@@ -260,6 +251,21 @@ input:focus{
     font-size: 1.5rem;
     
 }
+
+/* restart btn */
+
+.restart-btn{
+    background: #000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
 /* Timer */
 .circle-container{
     position: relative;
@@ -295,69 +301,14 @@ input:focus{
     font-size: 10px;
     color: #231c3d;
   }
-  .word-per-minute{
-    display: none;
-    margin: auto 0;
-  }
 
-  .word-per-minute-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .wpm-title{
-    display: flex;
-    align-items: flex-end;
-    margin-top: -50px;
-    margin-bottom: 20px;
-  }
-  .wpm-title h1{
-    font-size: 2.6rem;
-    text-shadow: 5px 8px 20px #000;
-  }
-  .paragraph{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 600px;
-    border: 2px solid white;
-  }
-  .time-score{
-    display: flex;
-    gap: 30px;
-    margin-bottom: 20px;
-  }
-  .input-wpm{
-    width: 400px;
-    height: 100px;
-    font-size: 2rem;
-    border: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 50px;
-  }
-  .wpm-btn{
-    background-color: black;
-    color: white;
-    font-size: 2rem;
-    padding: 10px 25px;
-    border-radius: 10px;
-  }
-  .wpm-btn:hover{
-    cursor: pointer;
-    transform: scale(0.9);
-  }
+ 
+  
 
+  
+  
+  
 
-  .error-wpm{
-    margin-top: 40px;
-    font-size: 2rem;
-  }
-  .error-wpm span{
-    color: red;
-    font-size: 3rem;
-    margin-left: 20px;
-  }
 
 
 
